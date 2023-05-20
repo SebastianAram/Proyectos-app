@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  proyectos:
+    container_name: proyectos
+    image: proyectos:v1
+    build:
+      context: .
+    ports:
+      - 5001:5001
+    networks:
+      - proyectos
+
+networks:
+  proyectos:
